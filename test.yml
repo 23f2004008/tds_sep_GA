@@ -1,0 +1,15 @@
+name: Test Workflow
+
+on:
+  push:               # runs when you push a commit
+  workflow_dispatch:  # lets you trigger manually from GitHub UI
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 23f2004008@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
